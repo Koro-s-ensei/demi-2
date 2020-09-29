@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sound_section",
+  "info": {
+    "name": "Sound Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "section_name": {
+      "type": "string"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "sounds": {
+      "via": "sound_section_id",
+      "collection": "sound"
+    },
+    "videos": {
+      "via": "section",
+      "collection": "videos"
+    }
+  }
+}

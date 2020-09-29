@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/video-like-dislikes",
+      "handler": "video-like-dislike.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-like-dislikes/count",
+      "handler": "video-like-dislike.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-like-dislikes/:id",
+      "handler": "video-like-dislike.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/video-like-dislikes",
+      "handler": "video-like-dislike.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/video-like-dislikes/:id",
+      "handler": "video-like-dislike.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/video-like-dislikes/:id",
+      "handler": "video-like-dislike.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/video-like-dislikes/create",
+      "handler": "video-like-dislike.videoLikeCreate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/device-tokons",
+      "handler": "device-tokon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/device-tokons/count",
+      "handler": "device-tokon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/device-tokons/:id",
+      "handler": "device-tokon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/device-tokons",
+      "handler": "device-tokon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/device-tokons/:id",
+      "handler": "device-tokon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/device-tokons/:id",
+      "handler": "device-tokon.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/device-tokons/create",
+      "handler": "device-tokon.deviceTokonCreate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

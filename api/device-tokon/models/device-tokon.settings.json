@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "device_tokon",
+  "info": {
+    "name": "Device Tokon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fb_id": {
+      "type": "string"
+    },
+    "tokon": {
+      "type": "string"
+    },
+    "phone_id": {
+      "type": "string"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "device_tokons"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_section",
+  "info": {
+    "name": "Discover Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "section_name": {
+      "type": "string"
+    },
+    "created": {
+      "type": "datetime"
+    }
+  }
+}

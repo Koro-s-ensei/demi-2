@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/follow-users",
+      "handler": "follow-users.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/follow-users/count",
+      "handler": "follow-users.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/follow-users/:id",
+      "handler": "follow-users.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/follow-users",
+      "handler": "follow-users.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/follow-users/:id",
+      "handler": "follow-users.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/follow-users/:id",
+      "handler": "follow-users.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/follow-users/create",
+      "handler": "follow-users.followUserCreate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

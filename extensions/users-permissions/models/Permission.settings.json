@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_permission",
+  "info": {
+    "name": "permission",
+    "description": ""
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "controller": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "action": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "enabled": {
+      "type": "boolean",
+      "required": true,
+      "configurable": false
+    },
+    "policy": {
+      "type": "string",
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "permissions",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "fb_id": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "profile_pic": {
+      "type": "string"
+    },
+    "block": {
+      "type": "string",
+      "default": "0"
+    },
+    "version": {
+      "type": "string",
+      "default": "0"
+    },
+    "device": {
+      "type": "string"
+    },
+    "signup_type": {
+      "type": "string"
+    },
+    "tokon": {
+      "type": "string"
+    },
+    "bearer_token": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "biginteger"
+    },
+    "longitude": {
+      "type": "biginteger"
+    },
+    "created": {
+      "type": "datetime"
+    }
+  }
+}

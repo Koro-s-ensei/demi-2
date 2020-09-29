@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fav_sound",
+  "info": {
+    "name": "Fav sound"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fb_id": {
+      "type": "string"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "fav_sounds"
+    },
+    "sound_id": {
+      "model": "sound",
+      "via": "fav_sounds"
+    },
+    "created": {
+      "type": "datetime"
+    }
+  }
+}

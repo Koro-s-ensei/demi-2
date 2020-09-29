@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "name": "Videos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fb_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "video": {
+      "type": "string"
+    },
+    "thum": {
+      "type": "string"
+    },
+    "gif": {
+      "type": "string"
+    },
+    "view": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "category": {
+      "type": "string",
+      "default": "0"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_id"
+    },
+    "video_comments": {
+      "collection": "video-comment",
+      "via": "video_id"
+    },
+    "section": {
+      "model": "sound-section",
+      "via": "videos"
+    },
+    "sound_id": {
+      "model": "sound",
+      "via": "videos"
+    },
+    "video_like_dislikes": {
+      "via": "video_id",
+      "collection": "video-like-dislike"
+    }
+  }
+}

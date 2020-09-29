@@ -1,0 +1,140 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "user_id": {
+      "via": "user",
+      "collection": "videos"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "fb_id": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "integer",
+      "default": 0
+    },
+    "gender": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "profile_pic": {
+      "type": "string"
+    },
+    "block": {
+      "type": "string",
+      "default": "0"
+    },
+    "version": {
+      "type": "string",
+      "default": "0"
+    },
+    "device": {
+      "type": "string"
+    },
+    "signup_type": {
+      "type": "string"
+    },
+    "tokon": {
+      "type": "string"
+    },
+    "bearer_token": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "video_comments": {
+      "via": "user_id",
+      "collection": "video-comment"
+    },
+    "sounds": {
+      "via": "user_id",
+      "collection": "sound"
+    },
+    "video_like_dislikes_by_user": {
+      "via": "user_id",
+      "collection": "video-like-dislike"
+    },
+    "follow_users": {
+      "via": "users_id",
+      "collection": "follow-users"
+    },
+    "followed_user": {
+      "via": "followed_user_id",
+      "collection": "follow-users"
+    },
+    "device_tokons": {
+      "via": "user_id",
+      "collection": "device-tokon"
+    },
+    "fav_sounds": {
+      "via": "user_id",
+      "collection": "fav-sound"
+    }
+  }
+}

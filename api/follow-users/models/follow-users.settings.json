@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "follow_users",
+  "info": {
+    "name": "Follow Users"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fb_id": {
+      "type": "string"
+    },
+    "users_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "follow_users"
+    },
+    "followed_fb_id": {
+      "type": "string"
+    },
+    "followed_user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "followed_user"
+    }
+  }
+}

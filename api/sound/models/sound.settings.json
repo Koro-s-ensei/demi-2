@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sound",
+  "info": {
+    "name": "sound"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sound_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "thum": {
+      "type": "text"
+    },
+    "sound_section_id": {
+      "model": "sound-section",
+      "via": "sounds"
+    },
+    "uploaded_by": {
+      "type": "string"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "sounds"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "videos": {
+      "via": "sound_id",
+      "collection": "videos"
+    },
+    "fav_sounds": {
+      "via": "sound_id",
+      "collection": "fav-sound"
+    }
+  }
+}

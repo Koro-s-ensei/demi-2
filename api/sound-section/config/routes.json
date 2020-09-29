@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sound-sections",
+      "handler": "sound-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sound-sections/count",
+      "handler": "sound-section.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sound-sections/:id",
+      "handler": "sound-section.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sound-sections",
+      "handler": "sound-section.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sound-sections/:id",
+      "handler": "sound-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sound-sections/:id",
+      "handler": "sound-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

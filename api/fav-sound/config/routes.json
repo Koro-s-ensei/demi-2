@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fav-sounds",
+      "handler": "fav-sound.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fav-sounds/count",
+      "handler": "fav-sound.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fav-sounds/:id",
+      "handler": "fav-sound.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fav-sounds",
+      "handler": "fav-sound.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fav-sounds/:id",
+      "handler": "fav-sound.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fav-sounds/:id",
+      "handler": "fav-sound.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fav-sounds/create",
+      "handler": "fav-sound.favSoundsCreate",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

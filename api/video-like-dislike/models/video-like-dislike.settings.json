@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_like_dislike",
+  "info": {
+    "name": "Video Like Dislike"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "video_id": {
+      "model": "videos",
+      "via": "video_like_dislikes"
+    },
+    "fb_id": {
+      "type": "string"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "video_like_dislikes_by_user"
+    },
+    "created": {
+      "type": "datetime"
+    }
+  }
+}
