@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sendible_users",
+  "info": {
+    "name": "sendible_users"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "api_key": {
+      "type": "text"
+    },
+    "color": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "fullname": {
+      "type": "text"
+    },
+    "sendible_user_id": {
+      "type": "text"
+    },
+    "lineage": {
+      "type": "text"
+    },
+    "login": {
+      "type": "text"
+    },
+    "parent_user_id": {
+      "type": "text"
+    },
+    "avatar": {
+      "type": "text"
+    },
+    "user_status": {
+      "type": "text"
+    },
+    "is_active": {
+      "type": "text"
+    },
+    "profile": {
+      "type": "text"
+    },
+    "last_login": {
+      "type": "text"
+    },
+    "is_owner": {
+      "type": "text"
+    },
+    "sms_credits": {
+      "type": "text"
+    },
+    "email_credits": {
+      "type": "text"
+    },
+    "trial_start_date": {
+      "type": "text"
+    },
+    "trial_days_left": {
+      "type": "text"
+    },
+    "state": {
+      "type": "text"
+    }
+  }
+}

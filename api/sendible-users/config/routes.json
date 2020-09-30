@@ -1,0 +1,61 @@
+{
+  "routes": [
+  
+	{
+      "method": "GET",
+      "path": "/sendible-users/getSendible",
+      "handler": "sendible-users.getSendible",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sendible-users",
+      "handler": "sendible-users.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sendible-users/count",
+      "handler": "sendible-users.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sendible-users/:id",
+      "handler": "sendible-users.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sendible-users",
+      "handler": "sendible-users.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sendible-users/:id",
+      "handler": "sendible-users.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sendible-users/:id",
+      "handler": "sendible-users.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
