@@ -20,24 +20,24 @@ module.exports = {
   // }
   '*/1 * * * *': () => {
     console.log('1 minute later');
-	const myPromise = new Promise((resolve, reject) => {
-		axios.get('https://api.sendible.com/api/v0/users', {
-		headers: {
-		  Accept: 'application/json, text/plain, */*',
-		  'User-Agent': 'axios/0.19.2'
-		},auth: {
-		  username: 'matthew@mintsocial.com',
-		  password: '3609mcoba1ZZ'
-		}
-		})
-		.then(res => {
-			console.log(res.data);
-		})
-		.catch(err => {
-			console.log('nhi aya');
-			console.log(err);
-			ctx.send(err);
-		});
-	});
+	//const myPromise = new Promise((resolve, reject) => {
+	//	axios.get('https://api.sendible.com/api/v0/users', {
+	//	headers: {
+	//	  Accept: 'application/json, text/plain, */*',
+	//	  'User-Agent': 'axios/0.19.2'
+	//	},auth: {
+	//	  username: 'matthew@mintsocial.com',
+	//	  password: '3609mcoba1ZZ'
+	//	}
+	//	})
+	//	.then(res => {
+	//		console.log(res.data);
+	//	})
+	//	.catch(err => {
+	//		console.log('nhi aya');
+	///		console.log(err);
+	//		ctx.send(err);
+	//	});
+	//});
   },
 };

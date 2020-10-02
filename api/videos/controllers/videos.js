@@ -23,17 +23,26 @@ module.exports = {
     return fields;
   },
   async lists(ctx) {
+	// const { data, files } = parseMultipartData(ctx);
+	  //console.log(data);
+	  
+		 //const {videobase64}= ctx.request.files;
 	  try {
-		const { fb_id, description,video,thum,gif } = ctx.request.body;
+		 return ctx.send({"message":ctx});
+		const { fb_id, description,videobase64,thum,gif } = ctx.request.body;
+		const start = Date.now();
+		const fileName = `${start}.mp4`;
+		console.log(fileName);
 		
-		let data_up= video.file_data;
+		let data_up= videobase64.file_data;
 		let uploaded_video = Buffer.from(data_up, 'base64');
-		console.log(uploaded_video);
-		upload.single(uploaded_video);
-		const fileName = 'video.mp4';
+		//console.log(uploaded_video);
+		//upload.single(uploaded_video);
+		//const fileName = 'video.mp4';
+		
 		await fs.writeFileSync(`${__dirname}/../../../public/images/${fileName}`, uploaded_video);
 		
-		
+		return ctx.send({"message":fileName});
 		return ctx.send({"message":uploaded_video});
 		const result = await strapi
 		.query('user', 'users-permissions')
@@ -100,5 +109,8 @@ module.exports = {
 		
 		const fields = result.toJSON();
 		return fields;
+	},
+	async videosUpload(ctx) {
+		console.log(ctx);
 	}
 };

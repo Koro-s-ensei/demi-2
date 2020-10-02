@@ -87,6 +87,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/videos-upload-react-js/",
+      "handler": "videos.videosUpload",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
