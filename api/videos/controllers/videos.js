@@ -22,7 +22,7 @@ module.exports = {
   const fields = result.toJSON();
     return fields;
   },
-  async lists(ctx) {
+  async videoFileUpload(ctx) {
 	// const { data, files } = parseMultipartData(ctx);
 	  //console.log(data);
 	  

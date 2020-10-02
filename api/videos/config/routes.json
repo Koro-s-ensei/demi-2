@@ -66,8 +66,8 @@
     },
     {
       "method": "POST",
-      "path": "/videos-lists/",
-      "handler": "videos.lists",
+      "path": "/video-upload/",
+      "handler": "videos.videoFileUpload",
       "config": {
         "policies": []
       }
